@@ -367,7 +367,7 @@ function App() {
             </div>
 
             {submitted ? (
-              <div className="form-success reveal" role="status">
+              <div className="form-success" role="status">
                 <h3>Request received</h3>
                 <p>
                   Thank you. This demo form does not send messages yet—when the
@@ -376,7 +376,7 @@ function App() {
                 </p>
               </div>
             ) : (
-              <form className="work-form reveal" onSubmit={handleSubmit}>
+              <form className="work-form reveal is-visible" onSubmit={handleSubmit}>
                 <label>
                   Full name
                   <input name="name" type="text" placeholder="Your name" required />
